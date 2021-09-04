@@ -14,6 +14,8 @@ public class Main {
         User userTwo = new User("Angela", "Davidson", (byte) 22);
         User userThree = new User("Neo", "Matrixovich", (byte) 40);
         User userFour = new User("Puh", "Vinny", (byte) 10);
+        
+        userService.createUsersTable();
 
         userService.saveUser(userOne.getName(), userOne.getLastName(), userOne.getAge());
         System.out.println("User с именем – " + userOne.getName() + " добавлен в базу данных");
